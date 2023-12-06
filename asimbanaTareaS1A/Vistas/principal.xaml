@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="asimbanaTareaS1A.Vistas.principal"
+             Title="principal">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Start">
+
+            <Image
+                Source="logouisrael.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="50"
+              
+                HorizontalOptions="Center"
+                />
+
+
+            <Label
+                Text="Afiliación IESS"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="30"
+                TextColor="DarkSlateGray"
+                HorizontalOptions="Center" />
+            <Entry
+                x:Name="txt_nombre"
+                Placeholder="Nombre"
+                FontSize="25"
+                ></Entry>
+            <Entry
+                x:Name="txt_apellido"
+                Placeholder="Apellido"
+                FontSize="25"
+                ></Entry>
+            <Entry
+                x:Name="txt_fecha_nacimiento"
+                Placeholder="Año nacimiento"
+                Keyboard="Numeric"
+                FontSize="25"
+                ></Entry>
+            <Entry
+                x:Name="txt_aporte"
+                Placeholder="Sueldo"
+                Keyboard="Numeric"
+                FontSize="25"
+                ></Entry>
+
+            <Button
+                x:Name="btnCalcular"
+                Text="Calcular Aporte"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="btnCalcular_Clicked"
+                HorizontalOptions="Center" />
+           
+        </VerticalStackLayout>
+       
+    </ScrollView>
+   
+</ContentPage>
